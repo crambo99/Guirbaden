@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Guirbaden.Benevolat"
+             Title="Bénévolat">
+    <VerticalStackLayout>
+        <Label Margin="10" HorizontalTextAlignment="Start"
+            Text="&#10;
+Chantier tous les Lundis et Samedi.&#10;&#10;
+Plus 2 semaines complètes en mai et juin pour ceux qui viennent de loin. (par exemple de Belgique)&#10;&#10;
+Aucune compétence particulière n’est demandée pour participer aux chantiers&#10;&#10;
+Rendez-vous devant l’atelier municipal de Mollkirch ( 9 rue de l’église) à 9h. Avec casse-croûte, boissons, gants et éventuellement chaussures de sécurité.&#10;&#10;
+Les sacs sont montés en 4×4 au château et les bénévoles aussi, suivant les places disponibles dans les 4×4. Sinon les plus téméraires montent à pieds … &#10;&#10;
+Il vaut mieux prévenir de votre venue au cas où le chantier serait annulé pour raison de météo défavorable ou autre.&#10;&#10;
+Contact:&#10;
+  - mail: contact@sauver-le-guirbaden.fr&#10;
+  - portable: 06.85.98.31.64
+            " />
+    </VerticalStackLayout>
+</ContentPage>

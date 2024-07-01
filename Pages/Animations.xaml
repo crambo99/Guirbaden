@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Guirbaden.Pages.Animations"
+             xmlns:viewmodel="clr-namespace:Guirbaden.Viewmodel"
+             xmlns:model="clr-namespace:Guirbaden.Model"             
+             x:DataType="viewmodel:AnimationViewModel"
+             Title="Animations">
+    <VerticalStackLayout>
+        <CollectionView ItemsSource="{Binding Infos}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="model:Event">
+                    <HorizontalStackLayout>
+                        <Label Margin="10,0,0,5">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                    <Span Text="{Binding date}" FontAttributes="Bold"/>
+                                    <Span Text=" : "/>
+                                    <Span Text="{Binding description}" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                        </Label>
+                    </HorizontalStackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        
+    </VerticalStackLayout>
+    
+</ContentPage>

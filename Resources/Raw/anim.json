@@ -1,0 +1,12 @@
+{
+    "events" : [
+        {
+            "date":"1er mai",
+            "description":"Tous au château"
+        },
+        {
+            "date":"Septembre", 
+            "description":"Journées Européennes du Patrimoine"
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Guirbaden.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+    Source="logoasso.jpg"
+    HeightRequest="100"
+    Aspect="AspectFit"
+    SemanticProperties.Description="Association Sauver le Guirbaden" />
+            <Label
+                Text="Association"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+            <Label
+                Text="Sauver le Guirbaden"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Sauver le Guirbaden" />
+            <Label HorizontalTextAlignment="Center" HorizontalOptions="Center"
+                Text="&#10;
+Créée en avril 2015, l'association a pour but la sauvegarde et la mise en valeur du château de Guirbaden." />
+            <Image
+                Source="donjon.jpg"
+                HeightRequest="300"
+                Aspect="AspectFit"
+                SemanticProperties.Description="Donjon Guirbaden" />
+            
+
+
+            <Label TextColor="LightGreen" Text="https://www.sauver-le-guirbaden.fr/" TextDecorations="Underline"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" >
+
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding TapCommand}"
+                                      CommandParameter="https://www.sauver-le-guirbaden.fr/" />
+                </Label.GestureRecognizers>
+
+            </Label>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

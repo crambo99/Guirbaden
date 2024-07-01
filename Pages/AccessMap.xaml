@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Guirbaden.AcessMap"
+             Title="Accès au chateau">
+    <VerticalStackLayout Margin="10,0,10,0">
+        <Label Text=""/>
+        <Label Text="Ci-dessous le plan d'accès au château :"/>
+        <Image Margin="0,10,0,10"
+                Source="planacces.jpg"
+                
+                Aspect="AspectFit"
+                SemanticProperties.Description="Donjon Guirbaden" />
+        <Label Text="Le château se trouve à environ 40 km (40 minutes) de Strasbourg."/>
+        <Label Text=""/>
+        <Label Text="On peut se garer soit à :"/>
+        <Label Text=" - Mollkirch suivi de 40 minutes de marche (2.1km et 250m de dénivelés), plus court mais plus raide."/>
+        <Label Text=" - Grendelbruch suivi de 40 minutes de marche (3.0km et 65m de dénivelés), un peu plus long mais plus agréable."/>
+
+    </VerticalStackLayout>
+</ContentPage>

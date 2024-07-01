@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Guirbaden.Pages.Param"
+             IconImageSource="param.jpg"
+             Title="Paramètres">
+    <VerticalStackLayout>
+        <Label Padding="10,0,0,10" Text="Version des informations locales : 1.0.0.0" />
+        <Button Margin="10" HorizontalOptions="FillAndExpand" Padding="10" Text="Mise à jour des informations" Clicked="Refresh"/>
+    </VerticalStackLayout>
+</ContentPage>

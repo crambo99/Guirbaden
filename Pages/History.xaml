@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Guirbaden.Pages.History"
+             Title="Histoire du château">
+    <VerticalStackLayout>
+        <Label Margin="10"   
+            Text="&#10;
+Le château du Guirbaden a été construit entre le 10ème et le 13ème siècle.&#10;&#10;
+En 1137, première mention du nom actuel du château «capellam juxta Girbadun apud Lobias sitam»&#10;&#10;
+En 1162 : Frédéric Ier Barberousse incendie le château.&#10;&#10;
+Entre 1218 et 1225 le château sera agrandi par l’empereur Frédéric II.&#10;&#10;
+1226 : Guirbaden devient bien épiscopal (évèque de Strasbourg Berthold 1er de Teck).&#10;&#10;
+1633 : Il fut  incendié lors de la guerre de 30 ans et définitivement détruit en 1657.&#10;&#10;
+
+Depuis  le 6 décembre 1898, le château de Guirbaden est classé  monument historique.
+            " />
+    </VerticalStackLayout>
+</ContentPage>

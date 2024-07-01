@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Guirbaden.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Guirbaden"
+    xmlns:localpages="clr-namespace:Guirbaden.Pages"
+    Shell.FlyoutBehavior="Flyout"
+    Shell.ForegroundColor="#689F38"
+    Title="Guirbaden">
+
+    <ShellContent
+        Icon="logoasso.jpg"
+        Title="Association"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+    <ShellContent
+        Title="Bénévolat"
+        Icon="construction.png"
+        ContentTemplate="{DataTemplate local:Benevolat}"
+        Route="BenevolatPage" />
+    <ShellContent
+        Title="Accès"
+        Icon="oip.jpeg"
+        ContentTemplate="{DataTemplate local:AcessMap}"
+        Route="MapPage" />
+    <ShellContent
+        Title="Histoire du château"
+        Icon="history.png"
+        ContentTemplate="{DataTemplate localpages:History}"
+        Route="HistoryPage" />
+    <ShellContent
+        Title="Plan du château"
+        Icon="map.png"
+        ContentTemplate="{DataTemplate localpages:Plan}"
+        Route="PlanPage" />
+    <ShellContent
+        Title="Animations"
+        Icon="festival.jpg"
+        ContentTemplate="{DataTemplate localpages:Animations}"
+        Route="AnimPage" />
+    <ShellContent
+        Title="Paramètres"
+        Icon="param.jpg"
+        ContentTemplate="{DataTemplate localpages:Param}"
+        Route="ParamPage" />
+</Shell>
