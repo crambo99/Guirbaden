@@ -107,7 +107,7 @@
 
   <PropertyGroup Condition="$(TargetFramework.Contains('-android')) and '$(Configuration)' == 'Release'">
     <AndroidKeyStore>True</AndroidKeyStore>
-    <AndroidSigningKeyStore>C:\Users\chris\source\repos\Guirbaden\guirbaden.keystore</AndroidSigningKeyStore>
+    <AndroidSigningKeyStore>C:\Users\chris\source\repos\guirbaden.keystore</AndroidSigningKeyStore>
     <AndroidSigningKeyStorePass>Guirbaden2015</AndroidSigningKeyStorePass>
     <AndroidSigningKeyAlias>guirbaden-alias</AndroidSigningKeyAlias>
   </PropertyGroup>
