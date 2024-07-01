@@ -26,6 +26,7 @@ namespace Guirbaden
             builder.Services.AddSingleton<Animations>();
             builder.Services.AddSingleton<AnimationViewModel>();
             builder.Services.AddSingleton<Param>();
+            builder.Services.AddSingleton<ParamViewModel>();
 
             return builder.Build();
         }
