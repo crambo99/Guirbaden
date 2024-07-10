@@ -8,7 +8,9 @@
              Title="Paramètres">
     <VerticalStackLayout>
         <Label Padding="10,0,0,10" Text="Version des informations locales : " />
-        <Label Padding="10,0,0,10" Text="{Binding LastParamDate, StringFormat='{}{0:d/M/yyyy H:mm:ss}'}" />
-        <Button Margin="10" HorizontalOptions="FillAndExpand" Padding="10" Text="Mise à jour des informations" Clicked="Refresh"/>
+        <Label Padding="10,0,0,10" Text="{Binding LocalParamDate, StringFormat='{}{0:d/M/yyyy H:mm:ss}'}" />
+        <Label Padding="10,0,0,10" IsVisible="{Binding HasNewNetworkData}" Text="Version des informations distantes : " />
+        <Label Padding="10,0,0,10" IsVisible="{Binding HasNewNetworkData}" Text="{Binding ServerParamDate, StringFormat='{}{0:d/M/yyyy H:mm:ss}'}" />
+        <Button Margin="10" IsVisible="{Binding HasNewNetworkData}" HorizontalOptions="FillAndExpand" Padding="10" Text="Mise à jour des informations" Clicked="Refresh"/>
     </VerticalStackLayout>
 </ContentPage>

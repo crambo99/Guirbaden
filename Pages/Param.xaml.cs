@@ -8,14 +8,19 @@ using Guirbaden.Viewmodel;
 
 public partial class Param : ContentPage
 {
-    private static string filePath = System.IO.Path.Combine(FileSystem.Current.AppDataDirectory, "anim.json");
+    private static string animFilePath = System.IO.Path.Combine(FileSystem.Current.AppDataDirectory, "anim.json");
+    private static string versionFilePath = System.IO.Path.Combine(FileSystem.Current.AppDataDirectory, "version.txt");
+
+
     private readonly IHttpClientFactory _httpClientFactory;
+    private readonly ParamViewModel _viewModel;
 
     public Param(IHttpClientFactory httpClientFactory,ParamViewModel vm)
     {
         InitializeComponent();
 
         _httpClientFactory = httpClientFactory;
+        _viewModel = vm;
         BindingContext = vm;
     }
 
@@ -28,8 +33,11 @@ public partial class Param : ContentPage
 
         if (!string.IsNullOrEmpty(json))
         {
-            using StreamWriter streamWriter = new StreamWriter(System.IO.File.OpenWrite(filePath));
+            using StreamWriter streamWriter = new StreamWriter(System.IO.File.OpenWrite(animFilePath));
             streamWriter.Write(json);
+
+            using StreamWriter versionStreamWriter = new StreamWriter(System.IO.File.OpenWrite(versionFilePath));
+            versionStreamWriter.Write(_viewModel.serverDate);
         }
     }
 }

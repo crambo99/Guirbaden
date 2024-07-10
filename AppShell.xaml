@@ -17,32 +17,32 @@
 
     <ShellContent
         Title="Bénévolat"
-        Icon="construction.png"
+        Icon="{AppThemeBinding Light=lightconstruction.png, Dark=darkconstruction.png}"
         ContentTemplate="{DataTemplate local:Benevolat}"
         Route="BenevolatPage" />
     <ShellContent
         Title="Accès"
-        Icon="oip.jpeg"
+        Icon="{AppThemeBinding Light=lightoip.png, Dark=darkoip.png}"
         ContentTemplate="{DataTemplate local:AcessMap}"
         Route="MapPage" />
     <ShellContent
         Title="Histoire du château"
-        Icon="history.png"
+        Icon="{AppThemeBinding Light=lighthistory.png, Dark=darkhistory.png}"
         ContentTemplate="{DataTemplate localpages:History}"
         Route="HistoryPage" />
     <ShellContent
         Title="Plan du château"
-        Icon="map.png"
+        Icon="{AppThemeBinding Light=lightmap.png, Dark=darkmap.png}"
         ContentTemplate="{DataTemplate localpages:Plan}"
         Route="PlanPage" />
     <ShellContent
         Title="Animations"
-        Icon="festival.jpg"
+        Icon="{AppThemeBinding Light=lightfestival.png, Dark=darkfestival.png}"
         ContentTemplate="{DataTemplate localpages:Animations}"
         Route="AnimPage" />
     <ShellContent
         Title="Paramètres"
-        Icon="param.jpg"
+        Icon="{AppThemeBinding Light=lightparam.png, Dark=darkparam.png}"
         ContentTemplate="{DataTemplate localpages:Param}"
         Route="ParamPage" />
 </Shell>
